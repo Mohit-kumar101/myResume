@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Mohit Kumar - Software Engineer Portfolio. Specializing in JavaScript, React, C++, and modern web development. Based in Vancouver, BC.">
+  <meta name="keywords" content="software engineer, web developer, JavaScript, React, C++, Vancouver, portfolio">
+  <meta name="author" content="Mohit Kumar">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-domain.com/">
+  <meta property="og:title" content="Mohit Kumar | Software Engineer">
+  <meta property="og:description" content="Software Engineer specializing in modern web development and C++ programming.">
+  <meta property="og:image" content="https://your-domain.com/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://your-domain.com/">
+  <meta property="twitter:title" content="Mohit Kumar | Software Engineer">
+  <meta property="twitter:description" content="Software Engineer specializing in modern web development and C++ programming.">
+  <meta property="twitter:image" content="https://your-domain.com/og-image.jpg">
+  
+  <title>Mohit Kumar | Software Engineer</title>
+  
+  <!-- Performance optimizations -->
+  <link rel="preconnect" href="https://use.fontawesome.com">
+  <link rel="dns-prefetch" href="https://use.fontawesome.com">
+  
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+  
+  <!-- EmailJS for contact form functionality -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohit Kumar",
+    "jobTitle": "Software Engineer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Langara College"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vancouver",
+      "addressRegion": "BC",
+      "addressCountry": "CA"
+    },
+    "knowsAbout": ["JavaScript", "React", "C++", "Web Development", "CSS", "HTML", "Node.js", "AWS", "Docker"],
+    "url": "https://your-domain.com",
+    "sameAs": [
+      "https://github.com/mohitkumar",
+      "https://linkedin.com/in/mohitkumar"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="icon-strip-bg">
+    <div class="icon-strip-track">
+      <i class="fa-brands fa-js icon-strip js-icon"></i>
+      <i class="fa-brands fa-css3-alt icon-strip css-icon"></i>
+      <i class="fa-brands fa-html5 icon-strip html-icon"></i>
+      <i class="fa-brands fa-react icon-strip react-icon"></i>
+      <img src="c++.png" alt="C++" class="icon-strip cpp-icon" />
+      <i class="fa-brands fa-python icon-strip python-icon"></i>
+      <i class="fa-brands fa-git-alt icon-strip git-icon"></i>
+      <i class="fa-brands fa-node-js icon-strip node-icon"></i>
+      <i class="fa-brands fa-php icon-strip php-icon"></i>
+      <i class="fa-brands fa-java icon-strip java-icon"></i>
+      <i class="fa-brands fa-js icon-strip js-icon"></i>
+      <i class="fa-brands fa-css3-alt icon-strip css-icon"></i>
+      <i class="fa-brands fa-html5 icon-strip html-icon"></i>
+      <i class="fa-brands fa-react icon-strip react-icon"></i>
+      <img src="c++.png" alt="C++" class="icon-strip cpp-icon" />
+      <i class="fa-brands fa-python icon-strip python-icon"></i>
+      <i class="fa-brands fa-git-alt icon-strip git-icon"></i>
+      <i class="fa-brands fa-node-js icon-strip node-icon"></i>
+      <i class="fa-brands fa-php icon-strip php-icon"></i>
+      <i class="fa-brands fa-java icon-strip java-icon"></i>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="nav-container">
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle dark/light mode">��</button>
+  <header class="hero-header">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="gradient-text">Mohit Kumar</h1>
+        <div class="title-container">
+          <span class="role-badge">👨‍💻</span>
+          <p class="role-text">Software Engineer</p>
+        </div>
+        <div class="floating-icons">
+          <i class="fa-brands fa-js floating-icon"></i>
+          <i class="fa-brands fa-react floating-icon"></i>
+          <img src="c++.png" alt="C++" class="floating-icon cpp-icon" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Intro Section: Animated code editor with typing effect and C++ easter egg -->
+    <section id="intro" class="intro-section">
+      <div class="intro-bg"></div>
+      <div class="code-editor">
+        <div class="editor-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="editor-title">Terminal - Mohit's Portfolio</span>
+        </div>
+        <div class="terminal-content">
+          <div class="terminal-output" id="terminal-output">
+            <div class="output-line">Welcome to Mohit's Portfolio Terminal! 🚀</div>
+            <div class="output-line">Type 'help' for available commands or click 'Run Demo' to see magic!</div>
+          </div>
+          <div class="terminal-line">
+            <span class="prompt">$</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command..." autocomplete="off">
+            <span class="cursor">|</span>
+          </div>
+        </div>
+        <div class="terminal-controls">
+          <button id="run-demo" class="run-btn primary">🚀 Run Demo</button>
+          <button id="clear-terminal" class="run-btn secondary">🗑️ Clear</button>
+          <button id="help-btn" class="run-btn secondary">❓ Help</button>
+        </div>
+        <div class="hidden-commands">
+          <div class="command-output" id="cpp-demo" style="display:none;">
+            <div class="output-line">$ g++ portfolio.cpp -o portfolio</div>
+            <div class="output-line">$ ./portfolio</div>
+            <div class="output-line">╔══════════════════════════════════════════════════════════╗</div>
+            <div class="output-line">║                    MOHIT KUMAR PORTFOLIO                 ║</div>
+            <div class="output-line">╠══════════════════════════════════════════════════════════╣</div>
+            <div class="output-line">║  👨‍💻 Software Engineer | Vancouver, BC                   ║</div>
+            <div class="output-line">║  🎓 Computer Science Student at Langara College          ║</div>
+            <div class="output-line">║  💻 C++ | JavaScript | React | CSS | HTML               ║</div>
+            <div class="output-line">║  🚀 Currently Learning: Advanced React & Next.js         ║</div>
+            <div class="output-line">║  📧 mohit.k3089@gmail.com                               ║</div>
+            <div class="output-line">║  🔗 github.com/Mohit-kumar101                           ║</div>
+            <div class="output-line">╚══════════════════════════════════════════════════════════╝</div>
+            <div class="output-line">System Status: ✅ Online and Ready for Collaboration!</div>
+            <div class="output-line">Memory Usage: 99% Passion | 1% Sleep</div>
+            <div class="output-line">CPU Load: 100% Creativity | 0% Boring Tasks</div>
+            <div class="output-line">Network: Connected to Innovation Hub 🌐</div>
+          </div>
+          <div class="command-output" id="help-output" style="display:none;">
+            <div class="output-line">Available Commands:</div>
+            <div class="output-line">  demo     - Run the main portfolio demo</div>
+            <div class="output-line">  skills   - Show my technical skills</div>
+            <div class="output-line">  projects - List my projects</div>
+            <div class="output-line">  contact  - Get contact information</div>
+            <div class="output-line">  about    - About me</div>
+            <div class="output-line">  clear    - Clear terminal</div>
+            <div class="output-line">  help     - Show this help message</div>
+          </div>
+          <div class="command-output" id="skills-output" style="display:none;">
+            <div class="output-line">$ cat skills.txt</div>
+            <div class="output-line">C++: ████████░░ 80% [Advanced]</div>
+            <div class="output-line">JavaScript: ██████░░░░ 70% [Proficient]</div>
+            <div class="output-line">CSS: ████████░░ 85% [Expert]</div>
+            <div class="output-line">HTML: █████████░ 90% [Expert]</div>
+            <div class="output-line">React: ██████░░░░ 70% [Proficient]</div>
+            <div class="output-line">Node.js: █████░░░░░ 60% [Intermediate]</div>
+            <div class="output-line">AWS: ████░░░░░░ 50% [Learning]</div>
+            <div class="output-line">Docker: ████░░░░░░ 50% [Learning]</div>
+          </div>
+          <div class="command-output" id="projects-output" style="display:none;">
+            <div class="output-line">$ ls projects/</div>
+            <div class="output-line">📁 C++ Algorithm Visualizer</div>
+            <div class="output-line">📁 JavaScript Weather App</div>
+            <div class="output-line">📁 CSS Animation Showcase</div>
+            <div class="output-line">📁 HTML Portfolio Template</div>
+            <div class="output-line">📁 This Portfolio Website</div>
+            <div class="output-line">Total: 5 projects | Status: All Active ✅</div>
+          </div>
+          <div class="command-output" id="contact-output" style="display:none;">
+            <div class="output-line">$ cat contact.info</div>
+            <div class="output-line">📧 Email: mohit.k3089@gmail.com</div>
+            <div class="output-line">🐙 GitHub: github.com/Mohit-kumar101</div>
+            <div class="output-line">💼 LinkedIn: linkedin.com/in/mohit-k-12b941275/</div>
+            <div class="output-line">📍 Location: Vancouver, BC, Canada</div>
+            <div class="output-line">🕐 Timezone: PST (UTC-8)</div>
+            <div class="output-line">📱 Available: Always for exciting projects!</div>
+          </div>
+          <div class="command-output" id="about-output" style="display:none;">
+            <div class="output-line">$ whoami</div>
+            <div class="output-line">Name: Mohit Kumar</div>
+            <div class="output-line">Role: Software Engineer</div>
+            <div class="output-line">Education: Computer Science Student</div>
+            <div class="output-line">Passion: Building amazing web experiences</div>
+            <div class="output-line">Goal: Create elegant, user-friendly applications</div>
+            <div class="output-line">Status: Ready to collaborate! 🚀</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Intro Section -->
+
+    <!-- About Me Section: Bio and major skills with icons -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hey there! I'm <strong>Mohit Kumar</strong>, a passionate software engineer who loves turning ideas into elegant, user-friendly applications. I specialize in building modern web experiences and exploring cutting-edge technologies that make the digital world more engaging.</p>
+          <!-- Programming Language Icons Row -->
+          <div class="about-icons-row">
+            <i class="fa-brands fa-js about-icon js-icon" title="JavaScript"></i>
+            <i class="fa-brands fa-css3-alt about-icon css-icon" title="CSS3"></i>
+            <i class="fa-brands fa-html5 about-icon html-icon" title="HTML5"></i>
+            <i class="fa-brands fa-react about-icon react-icon" title="React"></i>
+            <img src="c++.png" alt="C++" class="about-icon cpp-icon" title="C++" />
+          </div>
+        </div>
+        <div class="about-skills">
+          <div class="about-skill">
+            <span><i class="fa-brands fa-js about-icon"></i> JavaScript</span>
+            <p>Modern web apps, ES6+, React ecosystem</p>
+          </div>
+          <div class="about-skill">
+            <span><i class="fa-brands fa-css3-alt about-icon"></i> CSS</span>
+            <p>Responsive design, animations, modern layouts</p>
+          </div>
+          <div class="about-skill">
+            <span><img src="c++.png" alt="C++" class="about-icon cpp-icon" title="C++" /></span>
+            <p>Performance optimization, algorithms, system design</p>
+          </div>
+          <div class="about-skill">
+            <span><i class="fa-brands fa-react about-icon"></i> React</span>
+            <p>Component architecture, hooks, modern UI patterns</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Me Section -->
+
+    <!-- Resume Download Strip -->
+    <section class="resume-download-strip">
+      <div class="resume-strip-content">
+        <div class="resume-strip-text">
+          <h3>📄 Ready to dive deeper?</h3>
+          <p>Download my detailed resume to explore my complete experience and qualifications</p>
+        </div>
+        <a href="resume.pdf" class="resume-strip-btn" target="_blank">
+          <i class="fa-solid fa-download"></i>
+          <span>Download Resume</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Education Section: Timeline with interactive course details -->
+    <section id="education">
+      <h2>Education & Learning Journey</h2>
+      <div class="timeline">
+        <!-- Degree milestone -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>🎓 Bachelor of Science in Computer Science</h3>
+            <span class="timeline-date">Langara College, Vancouver &mdash; 2023-2025</span>
+            <p>Currently pursuing my degree, mastering the fundamentals of software engineering, algorithms, and system design. Building a solid foundation in both theoretical concepts and practical application.</p>
+          </div>
+        </div>
+        <!-- Interactive course milestone -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4 class="course-title interactive-course" tabindex="0">💻 Advanced Data Structures & Algorithms in C++</h4>
+            <div class="course-details" style="display:none;">
+              <p>Dived deep into complex data structures like AVL trees, graph algorithms, and dynamic programming. Implemented efficient solutions for real-world problems, achieving 95%+ performance benchmarks.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Web development course milestone -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>🌐 Full-Stack Web Development Mastery</h4>
+            <p>Mastered modern web technologies including JavaScript ES6+, responsive CSS frameworks, and server-side development. Built and deployed multiple full-stack applications with real-world impact.</p>
+          </div>
+        </div>
+        <!-- Certification milestone -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>🏆 Professional Certification: Responsive Web Design</h4>
+            <span class="timeline-date">freeCodeCamp &mdash; 2024-2025</span>
+            <p>Earned industry-recognized certification in responsive web design, mastering mobile-first development principles and accessibility standards.</p>
+          </div>
+        </div>
+        <!-- Additional achievement -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>🚀 Cloud & DevOps Fundamentals</h4>
+            <p>Self-taught cloud computing concepts, containerization with Docker, and infrastructure as code. Successfully deployed applications on AWS and implemented CI/CD pipelines.</p>
+          </div>
+        </div>
+        <!-- Current Learning Milestone -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>�� Currently Learning: Advanced React & Next.js</h4>
+            <span class="timeline-date">2025 &mdash; Ongoing</span>
+            <p>Currently diving deep into advanced React patterns, Next.js 14, and modern web development practices. Building real-world projects to master server-side rendering, API routes, and performance optimization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Education Section -->
+
+    <!-- Skills Section: Skill bars -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skills-list-advanced">
+          <!-- C++ Skill -->
+          <div class="skill-advanced" data-skill-info="C++: Advanced programming with focus on performance optimization and system-level development. Experienced in data structures, algorithms, and memory management. Built efficient applications using modern C++ standards and best practices." role="button" tabindex="0" aria-label="View C++ skill details">
+            <div class="skill-icon-container">
+              <img src="c++.png" alt="C++" class="skill-icon cpp-icon" />
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner cpp-bar" data-skill="80"></div>
+            </div>
+            <span class="skill-name">C++</span>
+          </div>
+          <!-- JavaScript Skill -->
+          <div class="skill-advanced" data-skill-info="JavaScript: Modern web development with ES6+ features and React ecosystem. Experienced in building dynamic user interfaces and interactive web applications. Proficient in asynchronous programming, DOM manipulation, and modern JavaScript frameworks." role="button" tabindex="0" aria-label="View JavaScript skill details">
+            <div class="skill-icon-container">
+              <i class="fa-brands fa-js skill-icon js-icon"></i>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner js-bar" data-skill="70"></div>
+            </div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <!-- CSS Skill -->
+          <div class="skill-advanced" data-skill-info="CSS: Advanced styling with modern CSS features including Flexbox, Grid, and animations. Experienced in responsive design principles and creating visually appealing user interfaces. Proficient in CSS preprocessors and modern layout techniques." role="button" tabindex="0" aria-label="View CSS skill details">
+            <div class="skill-icon-container">
+              <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner css-bar" data-skill="85"></div>
+            </div>
+            <span class="skill-name">CSS</span>
+          </div>
+          <!-- HTML Skill -->
+          <div class="skill-advanced" data-skill-info="HTML: Semantic markup and accessibility-focused web development. Experienced in creating well-structured, SEO-friendly websites that follow web standards. Proficient in HTML5 features and ensuring cross-browser compatibility." role="button" tabindex="0" aria-label="View HTML skill details">
+            <div class="skill-icon-container">
+              <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner html-bar" data-skill="90"></div>
+            </div>
+            <span class="skill-name">HTML</span>
+          </div>
+          <!-- AWS Skill -->
+          <div class="skill-advanced" data-skill-info="AWS: Cloud infrastructure and serverless application development. Experienced in deploying and managing applications on AWS services including EC2, S3, Lambda, and CloudFormation. Proficient in cloud architecture design and cost optimization strategies." role="button" tabindex="0" aria-label="View AWS skill details">
+            <div class="skill-icon-container">
+              <i class="fa-brands fa-aws skill-icon aws-icon"></i>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner aws-bar" data-skill="60"></div>
+            </div>
+            <span class="skill-name">AWS</span>
+          </div>
+          <!-- Docker Skill -->
+          <div class="skill-advanced" data-skill-info="Docker: Containerization and deployment automation for scalable applications. Experienced in creating Docker images, managing containers, and implementing CI/CD pipelines. Proficient in container orchestration and microservices architecture." role="button" tabindex="0" aria-label="View Docker skill details">
+            <div class="skill-icon-container">
+              <i class="fa-brands fa-docker skill-icon docker-icon"></i>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner docker-bar" data-skill="65"></div>
+            </div>
+            <span class="skill-name">Docker</span>
+          </div>
+          <!-- Python Skill -->
+          <div class="skill-advanced" data-skill-info="Python: Backend development and automation scripting for cloud applications. Experienced in building RESTful APIs, data processing scripts, and automation tools. Proficient in Python frameworks and cloud integration for scalable solutions." role="button" tabindex="0" aria-label="View Python skill details">
+            <div class="skill-icon-container">
+              <i class="fa-brands fa-python skill-icon python-icon"></i>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner python-bar" data-skill="50"></div>
+            </div>
+            <span class="skill-name">Python</span>
+          </div>
+          <!-- Node.js Skill -->
+          <div class="skill-advanced" data-skill-info="Node.js: Server-side JavaScript development for scalable web applications. Experienced in building REST APIs, real-time applications, and microservices architecture. Proficient in Express.js framework and database integration with MongoDB and PostgreSQL." role="button" tabindex="0" aria-label="View Node.js skill details">
+            <div class="skill-icon-container">
+              <i class="fa-brands fa-node-js skill-icon node-icon"></i>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner node-bar" data-skill="60"></div>
+            </div>
+            <span class="skill-name">Node.js</span>
+          </div>
+          <!-- Git Skill -->
+          <div class="skill-advanced" data-skill-info="Git: Version control and collaborative development workflows. Experienced in Git branching strategies, code review processes, and automated deployment pipelines. Proficient in GitHub Actions for CI/CD and maintaining clean, organized repositories." role="button" tabindex="0" aria-label="View Git skill details">
+            <div class="skill-icon-container">
+              <i class="fa-brands fa-git-alt skill-icon git-icon"></i>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner git-bar" data-skill="75"></div>
+            </div>
+            <span class="skill-name">Git</span>
+          </div>
+          <!-- Cybersecurity Skill -->
+          <div class="skill-advanced" data-skill-info="Cybersecurity: Security implementation and best practices for web applications. Experienced in implementing secure authentication systems, data encryption, and vulnerability assessment. Proficient in OWASP security guidelines and protecting applications against common threats." role="button" tabindex="0" aria-label="View Cybersecurity skill details">
+            <div class="skill-icon-container">
+              <i class="fa-solid fa-shield-halved skill-icon security-icon"></i>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner security-bar" data-skill="45"></div>
+            </div>
+            <span class="skill-name">Cybersecurity</span>
+          </div>
+        </div>
+        <!-- Dedicated Tooltip Display Area -->
+        <div class="skill-tooltip-display" id="skill-tooltip-display">
+          <div class="tooltip-header">
+            <h3>Skill Details</h3>
+            <p>Hover over any skill to see details</p>
+          </div>
+          <div class="tooltip-content" id="tooltip-content">
+            <div class="default-message">
+              <i class="fa-solid fa-info-circle"></i>
+              <p>Select a skill to view detailed information</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Projects Section: Project cards -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-list-advanced">
+        <!-- Project Card: C++ Algorithm Visualizer -->
+        <div class="project-card-advanced" data-tech="cpp">
+          <h3>C++ Algorithm Visualizer</h3>
+          <p>Visualizes sorting/searching algorithms using C++ and SFML.</p>
+          <div class="project-actions">
+            <a href="#" class="live-demo" target="_blank">Live Demo</a>
+            <button class="code-preview-btn">Code Preview</button>
+          </div>
+          <pre class="code-preview" style="display:none;">// Bubble Sort in C++
+void bubbleSort(int arr[], int n) {
+  for (int i = 0; i < n-1; i++)
+    for (int j = 0; j < n-i-1; j++)
+      if (arr[j] > arr[j+1])
+        swap(arr[j], arr[j+1]);
+}</pre>
+        </div>
+        <!-- Project Card: JavaScript Weather App -->
+        <div class="project-card-advanced" data-tech="js">
+          <h3>Weather App</h3>
+          <div class="project-tech"><span class="tech-badge js">JavaScript</span> <span class="tech-badge css">CSS</span> <span class="tech-badge html">HTML</span></div>
+          <p>Responsive weather dashboard using JavaScript, CSS, and OpenWeatherMap API.</p>
+          <div class="project-actions">
+            <a href="#" class="live-demo" target="_blank">Live Demo</a>
+            <button class="code-preview-btn">Code Preview</button>
+          </div>
+          <pre class="code-preview" style="display:none;">// Fetch weather in JavaScript
+fetch('api.openweathermap.org/data/2.5/weather?q=Vancouver')
+  .then(res => res.json())
+  .then(data => console.log(data));</pre>
+        </div>
+        <!-- Project Card: CSS Animation Showcase -->
+        <div class="project-card-advanced" data-tech="css">
+          <h3>CSS Animation Showcase</h3>
+          <div class="project-tech"><span class="tech-badge css">CSS</span> <span class="tech-badge html">HTML</span></div>
+          <p>Collection of modern, reusable CSS animations and transitions.</p>
+          <div class="project-actions">
+            <a href="#" class="live-demo" target="_blank">Live Demo</a>
+            <button class="code-preview-btn">Code Preview</button>
+          </div>
+          <pre class="code-preview" style="display:none;">/* CSS Pulse Animation */
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}</pre>
+        </div>
+        <!-- Project Card: HTML Portfolio Template -->
+        <div class="project-card-advanced" data-tech="html">
+          <h3>HTML Portfolio Template</h3>
+          <div class="project-tech"><span class="tech-badge html">HTML</span> <span class="tech-badge css">CSS</span></div>
+          <p>Clean, responsive portfolio template built with semantic HTML and modern CSS.</p>
+          <div class="project-actions">
+            <a href="#" class="live-demo" target="_blank">Live Demo</a>
+            <button class="code-preview-btn">Code Preview</button>
+          </div>
+          <pre class="code-preview" style="display:none;"><!-- Responsive HTML Layout -->
+<section class="portfolio">
+  <h2>My Projects</h2>
+  <!-- ... -->
+</section></pre>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section: Email and social links -->
+    <section id="contact" class="contact-section">
+      <div class="contact-bg-visual"></div>
+      <div class="contact-content-card fade-in-contact">
+        <div class="contact-header">
+          <div class="contact-visual">
+            <!-- Animated envelope or chat bubble can be added here with CSS -->
+            <span class="envelope-icon"><i class="fa-solid fa-envelope"></i></span>
+          </div>
+          <div class="contact-titles">
+            <h2>Let’s Connect!</h2>
+            <p class="contact-subheading">Drop me a line, I love to chat about code, tech, and new ideas!</p>
+          </div>
+        </div>
+        <div class="contact-container">
+          <!-- Contact Form -->
+          <!-- 
+            GOOGLE FORMS SETUP:
+            1. Create form at: https://forms.google.com
+            2. Add questions: Name, Email, Message
+            3. Get Form ID from URL: https://docs.google.com/forms/d/FORM_ID/edit
+            4. Get Entry IDs: Right-click form → View Source → Search "entry."
+            5. Replace YOUR_FORM_ID and entry.XXXXXXXXX below
+          -->
+          <form class="contact-form" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeGm6jo5igJoXFh_e3iC_yEfEsc06VqZcVQhVWaqFsNFsT_ag/formResponse" method="POST" target="_blank" autocomplete="off" novalidate>
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="entry.914981814" required placeholder="Your Name" minlength="2" maxlength="50" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="entry.203031372" required placeholder="you@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+              <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="entry.259957502" required placeholder="Your message..." minlength="10" maxlength="1000" rows="4"></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="contact-submit">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" style="display:none;">
+                <i class="fa-solid fa-spinner fa-spin"></i> Sending...
+              </span>
+            </button>
+          </form>
+          
+          <!-- Social Media Links -->
+          <div class="contact-socials">
+            <a href="https://github.com/Mohit-kumar101" class="social-icon github" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              <span class="social-reveal">GitProf</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mohit-k-12b941275/" class="social-icon linkedin" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              <span class="social-reveal">Linkeed</span>
+            </a>
+            <a href="mailto:mohit.k3089@gmail.com?subject=Portfolio Contact&body=Hi Mohit,%0D%0A%0D%0AI saw your portfolio and would like to connect.%0D%0A%0D%0ABest regards," class="social-icon email" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="social-reveal">Email Me</span>
+            </a>
+          </div>
+          <!-- C++ Console Contact -->
+          <div class="console-contact">
+            <button class="console-btn" id="console-contact-btn">Console Contact</button>
+            <pre class="console-output" id="console-output" style="display:none;">// contactMe() output will appear here</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+  </main>
+  <footer>
+    <p>&copy; 2024 Mohit Kumar</p>
+  </footer>
+  <script src="theme-toggle.js"></script>
+</body>
+</html> 
